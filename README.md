@@ -8,34 +8,35 @@ Delays:
 Success/Wrong pings: 303/13. Time begin ping: 00:29:11
 Response from 192.168.42.1 in 6.23 ms
 
-
 Success/Wrong pings: 304/13. Time begin ping: 00:29:19
 Response from 192.168.42.1 in 488.29 ms
-
 
 Success/Wrong pings: 305/13. Time begin ping: 00:29:27
 Ping failed
 
-
 Success/Wrong pings: 305/14. Time begin ping: 00:29:36
 Response from 192.168.42.1 in 234.99 ms
-
 
 Success/Wrong pings: 306/14. Time begin ping: 00:29:44
 Response from 192.168.42.1 in 690.22 ms
 
-
 Success/Wrong pings: 307/14. Time begin ping: 00:29:52
 Response from 192.168.42.1 in 27.87 ms
+
 Success/Wrong pings: 308/14. Time begin ping: 00:29:56
 Response from 192.168.42.1 in 399.87 ms
+
 Success/Wrong pings: 309/14. Time begin ping: 00:30:03
 Response from 192.168.42.1 in 36.22 ms
+
 Success/Wrong pings: 310/14. Time begin ping: 00:30:07
 Response from 192.168.42.1 in 42.37 ms
+
 Success/Wrong pings: 311/14. Time begin ping: 00:30:11
 Response from 192.168.42.1 in 51.10 ms
+
 Success/Wrong pings: 312/14. Time begin ping: 00:30:16
 Response from 192.168.42.1 in 125.26 ms
+
 Success/Wrong pings: 313/14. Time begin ping: 00:30:21
 Response from 192.168.42.1 in 132.27 ms
