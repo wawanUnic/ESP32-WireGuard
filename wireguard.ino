@@ -4,19 +4,18 @@
 #include <WiFi.h>
 #include "time.h"
 #include <WireGuard-ESP32.h>
-//#include <HTTPClient.h>
 #include <ESPping.h>
 
-char ssid[] = "wrtManMini";
-char password[] = "1231231232023";
+char ssid[] = "...............";
+char password[] = "..............";
 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 3600 * 1;
 const int   daylightOffset_sec = 3600 * 0;
 
-char private_key[] = "cMt/axrRi5KYbACD/DAhsu6AraRebzcrc/IceWOXMHM=";        // [Interface] PrivateKey
+char private_key[] = "cMt/axrRi5KYbACD/DAhsu6....................";        // [Interface] PrivateKey
 IPAddress local_ip(192,168,42,5);                                          // [Interface] Address
-char public_key[] = "UN4yBsP5Q0Z0VihrPZz0QEwaYBfUHRcnF3qs+CgGECQ=";         // [Peer] PublicKey
+char public_key[] = "UN4yBsP5Q0Z0VihrPZz0QEwaYB.................";         // [Peer] PublicKey
 char endpoint_address[] = "192.168.4.133";                                   // [Peer] Endpoint
 int endpoint_port = 51820;                                                  // [Peer] Endpoint
 
@@ -109,47 +108,4 @@ void loop()
     wrong += 1;
     Serial.println("Ping failed");
   }
-  
-  //  WiFiClient client;
-
-  //  if( !client.connect("http://portquiz.net/", 80) ) {
-  //      Serial.println("Failed to connect...");
-  //      delay(5000);
-  //      return;
-  //  }
-    
-  //  uint64_t uptime_msec = millis();
-  //  Serial.printf("Sending uptime %lu [ms]\r\n", uptime_msec);
-  //  String json;
-  //  json += "{\"uptime_msec\":";
-  //  json.concat(static_cast<unsigned long>(uptime_msec));
-  //  json += "}";
-  //  Serial.printf("payload: %s\r\n", json.c_str());
-    
-  //  client.write("POST / HTTP/1.1\r\n");
-  //  client.write("Host: harvest.soracom.io\r\n");
-  //  client.write("Connection: Keep-Alive\r\n");
-  //  client.write("Keep-Alive: timeout=5, max=2\r\n");
-  //  client.write("Content-Type: application/json\r\n");
-  //  client.write("Content-Length: ");
-  //  client.write(String(json.length(), 10).c_str());
-  //  client.write("\r\n\r\n");
-  //  client.write(json.c_str());
-
-  //  while(client.connected()) {
-  //      auto line = client.readStringUntil('\n');
-  //      Serial.write(line.c_str());
-  //      Serial.write("\n");
-  //      if( line == "\r" ) break;
-  //  }
-  //  if(client.connected()) {
-  //      uint8_t buffer[256];
-  //      size_t bytesToRead = 0;
-  //      while((bytesToRead = client.available()) > 0) {
-  //          bytesToRead = bytesToRead > sizeof(buffer) ? sizeof(buffer) : bytesToRead;
-  //          auto bytesRead = client.readBytes(buffer, bytesToRead); 
-  //          Serial.write(buffer, bytesRead);
-  //      }
-  //  }
-  //  delay(UPDATE_INTERVAL_MS);
 }
