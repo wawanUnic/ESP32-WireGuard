@@ -7,16 +7,16 @@
 #include <WireGuard-ESP32.h>
 #include <HTTPClient.h>
 
-char ssid[] = "wrtManMini";
-char password[] = "1231231232023";
+char ssid[] = "...";
+char password[] = "...";
 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 3600 * 1;
 const int   daylightOffset_sec = 3600 * 0;
 
-char private_key[] = "cMt/axrRi5KYbACD/DAhsu6AraRebzcrc/IceWOXMHM=";        // [Interface] PrivateKey
+char private_key[] = "cMt/axrRi5KYbACD/DAhsu6AraRebzcr...";        // [Interface] PrivateKey
 IPAddress local_ip(192,168,42,5);                                          // [Interface] Address
-char public_key[] = "UN4yBsP5Q0Z0VihrPZz0QEwaYBfUHRcnF3qs+CgGECQ=";         // [Peer] PublicKey
+char public_key[] = "UN4yBsP5Q0Z0VihrPZz0QEwaYBfUH...";         // [Peer] PublicKey
 char endpoint_address[] = "192.168.4.133";                                   // [Peer] Endpoint
 int endpoint_port = 51820;                                                  // [Peer] Endpoint
 
